@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:General Sans;
+    }
+
+    html,body,a{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        cursor: none;
+    }
+#minicricle{
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+   
+
+}
+    #main{
+        width: 100%;
+
+    }
+
+    #hero{
+        width: 100%;
+        height: 100vh;  
+       position: relative;
+        color: white;
+    }
+
+    #nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    #nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 2rem;
+        color: white;
+    }
+
+    .bounding{
+        width: fit-content;
+        overflow: hidden;
+    }
+    .bounding .boundingelm{
+        transform:translateY(100%);
+    }
+
+    .bounding .boundingelm2{
+        transform:translateY(-20px);
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    #heading{
+        margin-top: 90px;
+    }
+
+    #heading h1{
+        margin-left: 30px;
+        opacity: .6;
+        line-height: 1;
+        font-family: General Sans Medium;
+        font-size: 9vw;
+        text-transform: uppercase;
+        font-weight: 900;
+
+    }
+
+    #heading #secondh1{
+        margin-left: 230px ;
+    }
+
+    .blocktext{
+       display: flex;
+       flex-direction: column;
+       align-items: end;
+       width: fit-content;
+  
+    }
+    
+    .blocktext h5{
+      
+        text-transform: uppercase;
+        text-align: right;
+        font-size: 16px;
+    }
+
+    #subheading{
+        margin-top: 80px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        
+        
+    }
+    #subheading .subbounding{
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    #subheading .subboundingeelm{
+        transform: translateY(-25px);
+    }
+
+    #subheading h5{
+        line-height: 1.5;
+        margin-top:.5vw ;
+        font-size: 1vw;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    #herofooter{
+        padding: 0 2vw;
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    #herofooter a{
+        color:  white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+    }
+
+    #herofooter #iconset{
+        display: flex;
+        gap: 5px;
+    }
+
+    #herofooter .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: azure;
+        color: black;
+        
+    }
+/* second  */
+
+#second {
+    position: relative;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+.elem {
+    position: relative; /* Ensure the .elem has relative positioning */
+    width: 100%;
+    padding-top: 3.5vw;
+    border-top: 1px solid #888;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem h1{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .7;
+}
+
+.elembottom{
+    border-bottom:1px solid #888 ;
+}
+.elem img {
+    position: absolute; /* Image must be absolute to follow the mouse */
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    height: auto; /* Set desired height */
+    width: 50%; /* Set desired width */
+    z-index: 999;
+    transition: opacity 0.3s ease;
+    pointer-events: none; 
+}
+
+/* about */
+#about{
+    width: 100%;
+    padding: 18.5vw 5vw;
+    padding-left: 40vw;
+    color: white;
+    display: flex;
+    gap:20px;
+    
+
+}
+
+
+#textabout{
+    width: 30vw;
+   
+    
+    
+}
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p{
+    line-height: 1.7;
+   margin-bottom: 30px;
+}
+
+#about img{
+    width: 200px;
+    height: 200px;
+
+}
+
+#textabout a{
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 12px 22px;
+    text-decoration: none;
+    color: white;
+}
+
+#subscribe {
+    color: white;
+    line-height: 1.5;
+    padding: 20px 30px;
+    padding-bottom: 10vw ;
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 40px 30px;
+    color: white;
+}
+
+#footerleft{
+    display: flex;
+    gap:30px;
+}
+
+#footerright{
+    display: flex;
+    gap:30px;
+}
+
+
+#footerright a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 500;
+}
